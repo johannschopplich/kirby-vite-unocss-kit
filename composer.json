@@ -1,0 +1,21 @@
+{
+  "require": {
+    "php": ">=7.4.0",
+    "getkirby/cms": "^3.0",
+    "johannschopplich/kirby-extended": "^2.10",
+    "johannschopplich/kirby-blurry-placeholder": "^1.4",
+    "johannschopplich/kirby-vite": "^1.0"
+  },
+  "scripts": {
+    "start": [
+      "Composer\\Config::disableProcessTimeout",
+      "@php -S 127.0.0.1:8000 -t public/ server.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true
+  },
+  "extra": {
+    "kirby-cms-path": false
+  }
+}

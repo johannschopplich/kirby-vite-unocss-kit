@@ -1,0 +1,21 @@
+title:
+  de: Bild
+  en: Image
+
+accept:
+  type: image
+
+fields:
+  alt:
+    label:
+      de: Alternativtext
+      en: Alternative Text
+    type: text
+    icon: title
+  caption:
+    label:
+      de: Beschriftung
+      en: Caption
+    type: writer
+    icon: text
+    inline: true

@@ -1,0 +1,13 @@
+title:
+  de: Seite
+  en: Page
+
+columns:
+  - width: 2/3
+    sections:
+      main: sections/blocks
+
+  - width: 1/3
+    sections:
+      meta: sections/meta
+      images: sections/images

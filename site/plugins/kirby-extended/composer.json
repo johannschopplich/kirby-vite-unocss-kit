@@ -1,0 +1,47 @@
+{
+  "name": "johannschopplich/kirby-extended",
+  "description": "Env variables, meta tags generation and more",
+  "type": "kirby-plugin",
+  "keywords": [
+    "kirby",
+    "env",
+    "dotenv",
+    "seo",
+    "meta",
+    "meta-tags"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Johann Schopplich",
+      "email": "pkg@johannschopplich.com",
+      "homepage": "https://johannschopplich.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4.0",
+    "getkirby/composer-installer": "^1.2",
+    "symfony/polyfill-php80": "^1.20",
+    "vlucas/phpdotenv": "^5.0"
+  },
+  "require-dev": {
+    "getkirby/cms": "^3.0"
+  },
+  "autoload": {
+    "files": [
+      "helpers.php"
+    ],
+    "psr-4": {
+      "KirbyExtended\\": "classes/KirbyExtended/"
+    }
+  },
+  "scripts": {
+    "dist": "composer install --no-dev --optimize-autoloader"
+  },
+  "config": {
+    "optimize-autoloader": true
+  },
+  "extra": {
+    "kirby-cms-path": false
+  }
+}
