@@ -1,8 +1,8 @@
 {
   "prrivate": true,
   "scripts": {
-    "assets:unocss": "esmo scripts/generateUnoCSS.ts",
-    "dev": "shx touch src/.lock && concurrently \"npm run assets:unocss\" \"vite\"",
+    "assets:unocss": "unocss-cli \"site/snippets/**/*\" \"site/templates/**/*\" --out-file src/styles/uno.css",
+    "dev": "shx touch src/.lock && concurrently \"npm run assets:unocss -- --watch\" \"vite\"",
     "build": "shx rm -f src/.lock && NODE_ENV=production npm run assets:unocss && vite build",
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "npm run lint -- --fix",
@@ -17,11 +17,11 @@
     "concurrently": "^6.3.0",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
-    "esmo": "^0.12.0",
     "prettier": "^2.4.1",
     "sass": "^1.43.4",
     "shx": "^0.3.3",
     "unocss": "^0.7.4",
+    "unocss-cli": "^0.1.0",
     "vite": "^2.6.14",
     "vite-plugin-full-reload": "^0.2.2"
   }
