@@ -1,2 +1,4 @@
-@import "@unocss/reset/tailwind";
-@import "uno";
+// https://github.com/antfu/unocss/tree/main/packages/reset
+@forward "@unocss/reset/tailwind";
+
+@forward "uno";
