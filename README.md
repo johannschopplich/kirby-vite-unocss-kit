@@ -14,7 +14,7 @@ A powerful and performant integration of [Vite](https://vitejs.dev), [UnoCSS](ht
 
 ## Why UnoCSS
 
-tl;dr: Write you CSS like you prefer to and pull in only the utilities you need on top.
+tl;dr: Write your CSS like you prefer to and pull in only the utilities you need on top.
 
 Let me cite Anthony Fu:
 
@@ -52,7 +52,7 @@ composer install
 
 ## Configuration
 
-To add custom rules or shortcut, edit the [`unocss.config.ts`](./unocss.config.ts).
+To add custom rules or shortcuts, edit the [`unocss.config.ts`](./unocss.config.ts).
 
 For example, this project already defines a `box` class via a shortcut:
 
