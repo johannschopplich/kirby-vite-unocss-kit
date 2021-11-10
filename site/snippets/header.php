@@ -23,7 +23,7 @@
   <?= vite()->css() ?>
 
   <?php if (vite()->isDev()): ?>
-    <?= css('assets/dev/index.css', ['id' => 'vite-dev-css']) ?>
+    <?= css('assets/dev/index.css?v=' . time(), ['id' => 'vite-dev-css']) ?>
   <?php endif ?>
 
 </head>
