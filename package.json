@@ -1,9 +1,9 @@
 {
   "prrivate": true,
   "scripts": {
-    "assets:unocss": "unocss-cli \"site/snippets/**/*\" \"site/templates/**/*\" --out-file src/styles/uno.css",
-    "dev": "shx touch src/.lock && concurrently \"npm run assets:unocss -- --watch\" \"vite\"",
-    "build": "shx rm -f src/.lock && NODE_ENV=production npm run assets:unocss && vite build",
+    "uno": "unocss-cli \"site/snippets/**/*\" \"site/templates/**/*\" --out-file src/styles/uno.css",
+    "dev": "shx touch src/.lock && concurrently \"npm run uno -- --watch\" \"vite\"",
+    "build": "shx rm -f src/.lock && npm run uno && vite build",
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "npm run lint -- --fix",
     "format": "prettier --write \"src/**/*.ts\""
