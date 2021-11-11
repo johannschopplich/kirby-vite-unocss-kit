@@ -21,5 +21,5 @@ const templates = Object.fromEntries(
 );
 
 templates[document.body.dataset.template as string]?.().then((m) =>
-  m.default()
+  m.default?.()
 );

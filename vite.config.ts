@@ -30,7 +30,7 @@ export default defineConfig(({ mode }) => ({
     emptyOutDir: true,
     manifest: true,
     rollupOptions: {
-      input: [resolve(__dirname, "src/main.ts")],
+      input: resolve(__dirname, "src/main.ts"),
     },
   },
 
