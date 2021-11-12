@@ -21,7 +21,7 @@
     "sass": "^1.43.4",
     "shx": "^0.3.3",
     "unocss": "^0.7.7",
-    "unocss-cli": "^0.3.0",
+    "unocss-cli": "^0.3.1",
     "vite": "^2.6.14",
     "vite-plugin-full-reload": "^0.2.2"
   }
