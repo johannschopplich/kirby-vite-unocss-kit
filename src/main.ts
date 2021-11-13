@@ -20,6 +20,4 @@ const templates = Object.fromEntries(
   ])
 );
 
-templates[document.body.dataset.template as string]?.().then((m) =>
-  m.default?.()
-);
+templates[document.body.dataset.template ?? ""]?.().then((m) => m.default?.());
