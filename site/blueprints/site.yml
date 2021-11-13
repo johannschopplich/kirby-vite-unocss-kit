@@ -2,5 +2,39 @@ title:
   de: Seite
   en: Site
 
-preset: pages
-unlisted: true
+tabs:
+  dashboard:
+    label:
+      de: Übersicht
+      en: Dashboard
+    icon: dashboard
+    columns:
+      - width: 1/1
+        sections:
+          pages:
+            type: pages
+            headline:
+              de: Seiten
+              en: Pages
+            status: all
+            create: default
+            info: "/{{ page.slug }}"
+            image: page.thumbnail.toFile
+
+  settings:
+    label:
+      de: Einstellungen
+      en: Settings
+    icon: settings
+    columns:
+      - width: 1/1
+        sections:
+          meta:
+            extends: sections/meta
+            type: fields
+            fields:
+              thumbnail:
+                query: kirby.site.files.template('image')
+                uploads:
+                  parent: kirby.site
+                  template: image
