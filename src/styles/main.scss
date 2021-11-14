@@ -1,4 +1,4 @@
 // https://github.com/antfu/unocss/tree/main/packages/reset
-@forward "@unocss/reset/tailwind";
+@use "@unocss/reset/tailwind";
 
-@forward "uno";
+@use "uno";
