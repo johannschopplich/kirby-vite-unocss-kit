@@ -309,16 +309,16 @@
         },
         {
             "name": "johannschopplich/kirby-blurry-placeholder",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-blurry-placeholder.git",
-                "reference": "576b016cfef7a71175e53d63441e85689003f5f2"
+                "reference": "4d6400279bea2a06dbe1f434ac87ef5b57c02014"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-blurry-placeholder/zipball/576b016cfef7a71175e53d63441e85689003f5f2",
-                "reference": "576b016cfef7a71175e53d63441e85689003f5f2",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-blurry-placeholder/zipball/4d6400279bea2a06dbe1f434ac87ef5b57c02014",
+                "reference": "4d6400279bea2a06dbe1f434ac87ef5b57c02014",
                 "shasum": ""
             },
             "require": {
@@ -344,7 +344,7 @@
                 }
             ],
             "description": "Blurry image placeholders and lazy loading for better UX",
-            "homepage": "https://github.com/johannschopplich/kirby-blurry-placeholder",
+            "homepage": "https://github.com/johannschopplich/kirby-blurry-placeholder#readme",
             "keywords": [
                 "image",
                 "kirby",
@@ -354,9 +354,9 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-blurry-placeholder/issues",
-                "source": "https://github.com/johannschopplich/kirby-blurry-placeholder/tree/v1.4.1"
+                "source": "https://github.com/johannschopplich/kirby-blurry-placeholder/tree/v1.4.2"
             },
-            "time": "2021-11-16T15:08:50+00:00"
+            "time": "2021-11-16T15:40:42+00:00"
         },
         {
             "name": "johannschopplich/kirby-extended",
