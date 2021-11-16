@@ -309,24 +309,24 @@
         },
         {
             "name": "johannschopplich/kirby-blurry-placeholder",
-            "version": "v1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-blurry-placeholder.git",
-                "reference": "d12d4c8580d9a5d9d104967edb058ee2ecd96ab7"
+                "reference": "576b016cfef7a71175e53d63441e85689003f5f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-blurry-placeholder/zipball/d12d4c8580d9a5d9d104967edb058ee2ecd96ab7",
-                "reference": "d12d4c8580d9a5d9d104967edb058ee2ecd96ab7",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-blurry-placeholder/zipball/576b016cfef7a71175e53d63441e85689003f5f2",
+                "reference": "576b016cfef7a71175e53d63441e85689003f5f2",
                 "shasum": ""
             },
             "require": {
                 "getkirby/composer-installer": "^1.2",
-                "php": ">=7.3.0"
+                "php": ">=7.4.0"
             },
             "require-dev": {
-                "getkirby/cms": "^3.0"
+                "getkirby/cms": "^3.6"
             },
             "type": "kirby-plugin",
             "extra": {
@@ -344,6 +344,7 @@
                 }
             ],
             "description": "Blurry image placeholders and lazy loading for better UX",
+            "homepage": "https://github.com/johannschopplich/kirby-blurry-placeholder",
             "keywords": [
                 "image",
                 "kirby",
@@ -353,22 +354,22 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-blurry-placeholder/issues",
-                "source": "https://github.com/johannschopplich/kirby-blurry-placeholder/tree/v1.4.0"
+                "source": "https://github.com/johannschopplich/kirby-blurry-placeholder/tree/v1.4.1"
             },
-            "time": "2021-09-20T11:02:18+00:00"
+            "time": "2021-11-16T15:08:50+00:00"
         },
         {
             "name": "johannschopplich/kirby-extended",
-            "version": "v2.10.1",
+            "version": "2.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-extended.git",
-                "reference": "2d3e30fdb26d9d131b84bfde2ad92607d2b66186"
+                "reference": "6502e0a66f6112cb6496bc125a50b24d2ca6163b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-extended/zipball/2d3e30fdb26d9d131b84bfde2ad92607d2b66186",
-                "reference": "2d3e30fdb26d9d131b84bfde2ad92607d2b66186",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-extended/zipball/6502e0a66f6112cb6496bc125a50b24d2ca6163b",
+                "reference": "6502e0a66f6112cb6496bc125a50b24d2ca6163b",
                 "shasum": ""
             },
             "require": {
@@ -378,7 +379,7 @@
                 "vlucas/phpdotenv": "^5.0"
             },
             "require-dev": {
-                "getkirby/cms": "^3.0"
+                "getkirby/cms": "^3.6"
             },
             "type": "kirby-plugin",
             "extra": {
@@ -403,7 +404,8 @@
                     "homepage": "https://johannschopplich.com"
                 }
             ],
-            "description": "Env variables, meta tags generation and more",
+            "description": "Dotenv support, meta tags generation and more for the Kirby CMS",
+            "homepage": "https://github.com/johannschopplich/kirby-extended",
             "keywords": [
                 "dotenv",
                 "env",
@@ -414,22 +416,22 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-extended/issues",
-                "source": "https://github.com/johannschopplich/kirby-extended/tree/v2.10.1"
+                "source": "https://github.com/johannschopplich/kirby-extended/tree/v2.10.2"
             },
-            "time": "2021-10-21T06:43:53+00:00"
+            "time": "2021-11-16T15:15:15+00:00"
         },
         {
             "name": "johannschopplich/kirby-vite",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-vite.git",
-                "reference": "b1a3839e3b9499ea9dd26aa71719bd690a87408f"
+                "reference": "de028f3109051116db11bc57e51a1e1da4b020de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-vite/zipball/b1a3839e3b9499ea9dd26aa71719bd690a87408f",
-                "reference": "b1a3839e3b9499ea9dd26aa71719bd690a87408f",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-vite/zipball/de028f3109051116db11bc57e51a1e1da4b020de",
+                "reference": "de028f3109051116db11bc57e51a1e1da4b020de",
                 "shasum": ""
             },
             "require": {
@@ -437,7 +439,7 @@
                 "php": ">=7.4.0"
             },
             "require-dev": {
-                "getkirby/cms": "^3.0"
+                "getkirby/cms": "^3.6"
             },
             "type": "kirby-plugin",
             "extra": {
@@ -455,16 +457,16 @@
                 }
             ],
             "description": "Vite integration for the Kirby CMS",
-            "homepage": "https://github.com/johannschopplich/kirby-vite",
+            "homepage": "https://github.com/johannschopplich/kirby-vite#readme",
             "keywords": [
                 "kirby",
                 "vite"
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-vite/issues",
-                "source": "https://github.com/johannschopplich/kirby-vite/tree/v1.0.1"
+                "source": "https://github.com/johannschopplich/kirby-vite/tree/v1.0.2"
             },
-            "time": "2021-11-09T15:50:36+00:00"
+            "time": "2021-11-16T15:28:00+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
