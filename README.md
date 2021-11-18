@@ -121,4 +121,4 @@ rm -rf storage/cache/<your-website>
 
 ## License
 
-[MIT](https://opensource.org/licenses/MIT)
+[MIT](./LICENSE) License © 2021 [Johann Schopplich](https://github.com/johannschopplich)
