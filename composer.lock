@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c7fdab6182df8d8f070b3ae44519285",
+    "content-hash": "8134e4b003a81a0763dd033ed5abf783",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -245,6 +245,42 @@
                 }
             ],
             "time": "2020-12-28T12:54:39+00:00"
+        },
+        {
+            "name": "getkirby/layouts",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/getkirby/layouts.git",
+                "reference": "50532597497eb466718448b356dcf396d4e3b8ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/getkirby/layouts/zipball/50532597497eb466718448b356dcf396d4e3b8ea",
+                "reference": "50532597497eb466718448b356dcf396d4e3b8ea",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2"
+            },
+            "type": "kirby-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bastian Allgeier",
+                    "email": "bastian@getkirby.com"
+                }
+            ],
+            "description": "Kirby Layouts Plugin",
+            "homepage": "https://github.com/getkirby/layouts",
+            "support": {
+                "issues": "https://github.com/getkirby/layouts/issues",
+                "source": "https://github.com/getkirby/layouts/tree/1.0.0"
+            },
+            "time": "2021-11-18T12:07:48+00:00"
         },
         {
             "name": "graham-campbell/result-type",

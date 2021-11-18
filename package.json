@@ -1,7 +1,7 @@
 {
   "prrivate": true,
   "scripts": {
-    "uno": "unocss \"site/snippets/**/*\" \"site/templates/**/*\" --out-file src/styles/uno.css",
+    "uno": "unocss \"site/{layouts,snippets,templates}/**/*\" --out-file src/styles/uno.css",
     "dev": "shx touch src/.lock && concurrently \"npm run uno -- --watch\" \"vite\"",
     "build": "shx rm -f src/.lock && npm run uno && vite build",
     "lint": "eslint \"src/**/*.ts\"",
@@ -10,8 +10,8 @@
   },
   "devDependencies": {
     "@types/node": "^16.11.7",
-    "@typescript-eslint/eslint-plugin": "^5.3.1",
-    "@typescript-eslint/parser": "^5.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
     "colorette": "^2.0.16",
     "concurrently": "^6.4.0",
     "eslint": "^8.2.0",
@@ -19,7 +19,7 @@
     "prettier": "^2.4.1",
     "sass": "^1.43.4",
     "shx": "^0.3.3",
-    "unocss": "^0.9.3",
+    "unocss": "^0.10.0",
     "vite": "^2.6.14",
     "vite-plugin-full-reload": "^0.2.2"
   }

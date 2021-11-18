@@ -40,7 +40,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
 
-  plugins: [FullReload(["site/snippets/**/*", "site/templates/**/*"])],
+  plugins: [FullReload(["site/{layouts,snippets,templates}/**/*"])],
 
   server: {
     cors: true,

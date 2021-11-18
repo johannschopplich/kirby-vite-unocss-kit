@@ -30,3 +30,12 @@
 
 <body data-template="<?= $page->intendedTemplate()->name() ?>">
   <main class="mx-auto max-w-screen-md py-4 px-4">
+    <?php slot() ?>
+    <?php endslot() ?>
+
+    <?php snippet('footer') ?>
+  </main>
+
+
+</body>
+</html>
