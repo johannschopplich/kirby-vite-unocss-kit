@@ -25,7 +25,9 @@ Let me cite Anthony Fu:
 For example, for this kit only the following utilities are generated:
 
 ```css
-.box{padding:1rem;margin-left:auto;margin-right:auto;--un-bg-opacity:1;background-color:rgba(244,244,245,var(--un-bg-opacity));border-radius:0.375rem;--un-shadow-color:0,0,0;--un-shadow:0 1px 2px 0 rgba(var(--un-shadow-color), 0.05);-webkit-box-shadow:var(--un-ring-offset-shadow, 0 0 #0000), var(--un-ring-shadow, 0 0 #0000), var(--un-shadow);box-shadow:var(--un-ring-offset-shadow, 0 0 #0000), var(--un-ring-shadow, 0 0 #0000), var(--un-shadow);max-width:7xl;}
+/* layer: shortcuts */
+.box{padding:1rem;margin-left:auto;margin-right:auto;--un-bg-opacity:1;background-color:rgba(244,244,245,var(--un-bg-opacity));border-radius:0.375rem;--un-shadow-color:0,0,0;--un-shadow:0 1px 2px 0 rgba(var(--un-shadow-color), 0.05);box-shadow:var(--un-ring-offset-shadow, 0 0 #0000), var(--un-ring-shadow, 0 0 #0000), var(--un-shadow);max-width:7xl;}
+/* layer: default */
 .px-4{padding-left:1rem;padding-right:1rem;}
 .py-4{padding-top:1rem;padding-bottom:1rem;}
 .mx-auto{margin-left:auto;margin-right:auto;}
