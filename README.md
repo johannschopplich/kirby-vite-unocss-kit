@@ -9,6 +9,7 @@ A powerful and performant integration of [Vite](https://vitejs.dev), [UnoCSS](ht
 - 💡 [On-demand template loading](./src/templates)
 - 🪄 Page reload on PHP snippet/template changes
 - 🎨 [UnoCSS](https://github.com/antfu/unocss) – on-demand atomic CSS engine similar to Tailwind CSS
+- 🤹‍♀️ [Pure CSS icons](https://github.com/antfu/unocss/tree/main/packages/preset-icons/) – use any icon as a single class
 - 🔍 [SEO-friendly](https://github.com/johannschopplich/kirby-extended/blob/main/docs/meta.md) defaults
 - 🦾 TypeScript, of course
 
@@ -81,7 +82,7 @@ shortcuts: {
 
 ### Development
 
-1. Build assets and watch for changes accordingly:
+1. Start the Vite development server and watch for file changes accordingly:
 
 ```bash
 npm run dev
@@ -95,7 +96,7 @@ composer start
 
 ### Production
 
-Build the frontend assets (CSS & JS files):
+Build the frontend assets:
 
 ```bash
 npm run build

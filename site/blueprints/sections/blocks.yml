@@ -11,8 +11,8 @@ fields:
           - heading
           - text
           - list
-          - table
           - quote
+          - line
       media:
         label:
           de: Medien

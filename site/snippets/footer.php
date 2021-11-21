@@ -1,5 +1,5 @@
 <footer class="box">
   <p>
-    <?= date('Y') ?>
+    Copyright <?= date('Y') ?> your website
   </p>
 </footer>
