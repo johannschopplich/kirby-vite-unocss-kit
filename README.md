@@ -53,16 +53,21 @@ When running `npm run dev`:
 
 ## Installation
 
-1. Duplicate the [`.env.example`](.env.example) as `.env` and optionally adapt its values depending on your environment:
+1. Duplicate the [`.env.development.example`](./.env.development.example) as `.env`:
 
 ```bash
-cp .env.example .env
+cp .env.development.example .env
 ```
 
-1. Install the required dependencies:
+1. Install the required npm dependencies:
 
 ```bash
-npm install
+pnpm install
+```
+
+1. Install the required Composer dependencies:
+
+```bash
 composer install
 ```
 
@@ -110,15 +115,9 @@ rm -rf storage/cache/<your-website>
 
 ### Deployment
 
-1. Deploy whole repository on your server.
-2. Duplicate [`.env.example`](.env.example) as `.env`.
-3. Install dependencies:
-   - `npm install`
-   - `composer install`
-4. Build frontend assets:
-   - `npm run build`
-5. Point your web server to the `public` folder.
-6. For Apache web servers: Some hosting environments require to uncomment `RewriteBase /` in [`.htaccess`](public/.htaccess) to make site links work.
+> ℹ️ See [ploi-deploy.sh](./scripts/ploi-deploy.sh) for deployment instructions.
+
+> ℹ️ For Apache web servers: Some hosting environments require to uncomment `RewriteBase /` in [`.htaccess`](./public/.htaccess) to make site links work.
 
 ## License
 
