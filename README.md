@@ -62,7 +62,7 @@ cp .env.development.example .env
 1. Install the required npm dependencies:
 
 ```bash
-pnpm install
+npm install
 ```
 
 1. Install the required Composer dependencies:
