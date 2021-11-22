@@ -1,5 +1,5 @@
 import { resolve } from "path";
-import { existsSync, mkdirSync, writeFileSync } from "fs";
+import { outputFileSync } from "fs-extra";
 import { defineConfig } from "vite";
 import FullReload from "vite-plugin-full-reload";
 import type { Plugin as PostCssPlugin } from "postcss";
@@ -8,16 +8,17 @@ import type { Plugin as PostCssPlugin } from "postcss";
  * Prevent FOUC in development mode before Vite
  * injects the CSS into the page
  */
-const postCssWriteFile = (): PostCssPlugin => ({
-  postcssPlugin: "postcss-write-file",
+const postCssViteDevCss = (): PostCssPlugin => ({
+  postcssPlugin: "postcss-vite-dev-css",
 
-  Root(root, postcss) {
+  OnceExit(root, { result }) {
     // @ts-expect-error: property unknown
-    if (postcss.result.opts.env === "production") return;
-
-    const distDir = resolve(__dirname, "public/assets/dev");
-    if (!existsSync(distDir)) mkdirSync(distDir);
-    writeFileSync(`${distDir}/index.css`, root.source?.input.css ?? "");
+    if (result.opts.env !== "production") {
+      outputFileSync(
+        resolve(__dirname, "public/assets/dev/index.css"),
+        root.toResult().css
+      );
+    }
   },
 });
 
@@ -36,7 +37,7 @@ export default defineConfig(({ mode }) => ({
 
   css: {
     postcss: {
-      plugins: [postCssWriteFile()],
+      plugins: [postCssViteDevCss()],
     },
   },
 
