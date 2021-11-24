@@ -284,16 +284,16 @@
         },
         {
             "name": "graham-campbell/result-type",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Result-Type.git",
-                "reference": "296c015dc30ec4322168c5ad3ee5cc11dae827ac"
+                "reference": "0690bde05318336c7221785f2a932467f98b64ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/296c015dc30ec4322168c5ad3ee5cc11dae827ac",
-                "reference": "296c015dc30ec4322168c5ad3ee5cc11dae827ac",
+                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/0690bde05318336c7221785f2a932467f98b64ca",
+                "reference": "0690bde05318336c7221785f2a932467f98b64ca",
                 "shasum": ""
             },
             "require": {
@@ -316,7 +316,8 @@
             "authors": [
                 {
                     "name": "Graham Campbell",
-                    "email": "hello@gjcampbell.co.uk"
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
                 }
             ],
             "description": "An Implementation Of The Result Type",
@@ -329,7 +330,7 @@
             ],
             "support": {
                 "issues": "https://github.com/GrahamCampbell/Result-Type/issues",
-                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.0.3"
+                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.0.4"
             },
             "funding": [
                 {
@@ -341,7 +342,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-17T19:48:54+00:00"
+            "time": "2021-11-21T21:41:47+00:00"
         },
         {
             "name": "johannschopplich/kirby-blurry-placeholder",
@@ -396,22 +397,22 @@
         },
         {
             "name": "johannschopplich/kirby-extended",
-            "version": "2.10.2",
+            "version": "2.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-extended.git",
-                "reference": "6502e0a66f6112cb6496bc125a50b24d2ca6163b"
+                "reference": "b4f10330ba7d20c5c23507af0c046f92afde1b0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-extended/zipball/6502e0a66f6112cb6496bc125a50b24d2ca6163b",
-                "reference": "6502e0a66f6112cb6496bc125a50b24d2ca6163b",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-extended/zipball/b4f10330ba7d20c5c23507af0c046f92afde1b0f",
+                "reference": "b4f10330ba7d20c5c23507af0c046f92afde1b0f",
                 "shasum": ""
             },
             "require": {
                 "getkirby/composer-installer": "^1.2",
                 "php": ">=7.4.0",
-                "symfony/polyfill-php80": "^1.20",
+                "symfony/polyfill-php80": "^1.23",
                 "vlucas/phpdotenv": "^5.0"
             },
             "require-dev": {
@@ -441,7 +442,7 @@
                 }
             ],
             "description": "Dotenv support, meta tags generation and more for the Kirby CMS",
-            "homepage": "https://github.com/johannschopplich/kirby-extended",
+            "homepage": "https://github.com/johannschopplich/kirby-extended#readme",
             "keywords": [
                 "dotenv",
                 "env",
@@ -452,9 +453,9 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-extended/issues",
-                "source": "https://github.com/johannschopplich/kirby-extended/tree/v2.10.2"
+                "source": "https://github.com/johannschopplich/kirby-extended/tree/v2.10.3"
             },
-            "time": "2021-11-16T15:15:15+00:00"
+            "time": "2021-11-23T12:56:39+00:00"
         },
         {
             "name": "johannschopplich/kirby-vite",
