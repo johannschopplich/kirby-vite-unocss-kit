@@ -1,3 +1,3 @@
 export default async () => {
-  console.log("This logic will run on every page");
+  console.log("Hello from the default template!");
 };

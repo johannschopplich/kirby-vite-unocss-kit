@@ -2,16 +2,16 @@ Title: Home
 
 ----
 
-Text: [{"content":{"level":"h1","text":"Kirby Vite UnoCSS Kit"},"id":"12a02ece-083a-4c87-997b-137d86594134","isHidden":false,"type":"heading"},{"content":{"text":"<p>These blocks are styled entirely by UnoCSS utilities. For the box surrounding this text block, a shortcut was added. UnoCSS shortcuts works similar to Taiwind\/WindiCSS <code>@apply<\/code>:<\/p>"},"id":"dd9ba371-9113-467d-9d39-0d94900ee24d","isHidden":false,"type":"text"},{"content":{"code":"shortcuts: [\n  { box: \"max-w-7xl mx-auto bg-gray-100 rounded-md shadow-sm p-4\" },\n]","language":"js"},"id":"94e69d50-0c0d-4ad9-ac8a-285e2de0ee0c","isHidden":false,"type":"code"},{"content":{"text":"<p>With <a href=\"https:\/\/github.com\/antfu\/unocss\/tree\/main\/packages\/preset-icons\/\" rel=\"noopener noreferrer\">@unocss\/preset-icons<\/a>, you can use any icons from any free icon library thanks to <a href=\"https:\/\/iconify.design\" rel=\"noopener noreferrer\">Iconify<\/a>, which unified 100+ icon sets with 10,000+ icons into the consistent JSON format.<\/p>"},"id":"24f89682-ea11-4ce1-be24-7ba5da4580a8","isHidden":false,"type":"text"},{"content":{"code":"<div class=\"i-carbon-sun hover:i-carbon-moon text-4xl\"><\/div>\n<div class=\"i-carbon-warning text-4xl\"><\/div>\n<div class=\"i-logos-kirby-icon text-4xl\"><\/div>","language":"html"},"id":"890cc8a3-cfc4-44db-b4c0-3138ae618a9a","isHidden":false,"type":"code"}]
+Text: [{"content":{"level":"h1","text":"Kirby Vite UnoCSS Kit"},"id":"12a02ece-083a-4c87-997b-137d86594134","isHidden":false,"type":"heading"},{"content":{"text":"<p>These blocks are styled entirely by UnoCSS utilities. For the box surrounding this text block, a shortcut was added. UnoCSS shortcuts works similar to Tailwind\/WindiCSS <code>@apply<\/code>:<\/p>"},"id":"dd9ba371-9113-467d-9d39-0d94900ee24d","isHidden":false,"type":"text"},{"content":{"code":"shortcuts: [\n  { box: \"max-w-7xl mx-auto bg-gray-100 rounded-md shadow-sm p-4\" },\n]","language":"js"},"id":"94e69d50-0c0d-4ad9-ac8a-285e2de0ee0c","isHidden":false,"type":"code"},{"content":{"text":"<p>With <a href=\"https:\/\/github.com\/antfu\/unocss\/tree\/main\/packages\/preset-icons\/\" rel=\"noopener noreferrer\">@unocss\/preset-icons<\/a>, you can use any icons from any free icon library thanks to <a href=\"https:\/\/iconify.design\" rel=\"noopener noreferrer\">Iconify<\/a>, which unified 100+ icon sets with 10,000+ icons into the consistent JSON format.<\/p>"},"id":"24f89682-ea11-4ce1-be24-7ba5da4580a8","isHidden":false,"type":"text"},{"content":{"code":"<div class=\"i-carbon-sun hover:i-carbon-moon text-4xl\"><\/div>\n<div class=\"i-carbon-warning text-4xl\"><\/div>\n<div class=\"i-logos-kirby-icon text-4xl\"><\/div>","language":"html"},"id":"890cc8a3-cfc4-44db-b4c0-3138ae618a9a","isHidden":false,"type":"code"}]
 
 ----
 
-Customtitle: 
+Customtitle:
 
 ----
 
-Description: 
+Description:
 
 ----
 
-Thumbnail: 
+Thumbnail:
