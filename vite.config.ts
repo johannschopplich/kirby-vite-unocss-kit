@@ -1,5 +1,5 @@
 import { resolve } from "path";
-import { outputFileSync } from "fs-extra";
+import { mkdirSync, writeFileSync } from "fs";
 import { defineConfig } from "vite";
 import FullReload from "vite-plugin-full-reload";
 import type { Plugin as PostCssPlugin } from "postcss";
@@ -14,10 +14,9 @@ const postCssViteDevCss = (): PostCssPlugin => ({
   OnceExit(root, { result }) {
     // @ts-expect-error: property unknown
     if (result.opts.env !== "production") {
-      outputFileSync(
-        resolve(__dirname, "public/assets/dev/index.css"),
-        root.toResult().css
-      );
+      const outDir = resolve(__dirname, "public/assets/dev");
+      mkdirSync(outDir, { recursive: true });
+      writeFileSync(resolve(outDir, "index.css"), root.toResult().css);
     }
   },
 });
