@@ -1,7 +1,7 @@
 {
   "require": {
-    "php": ">=7.4.0",
-    "getkirby/cms": "^3.6",
+    "php": ">=8.0.0",
+    "getkirby/cms": "^3.7",
     "getkirby/layouts": "^1.0",
     "johannschopplich/kirby-extended": "^2.10",
     "johannschopplich/kirby-blurry-placeholder": "^1.4",

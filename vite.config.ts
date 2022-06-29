@@ -41,10 +41,4 @@ export default defineConfig(({ mode }) => ({
   },
 
   plugins: [FullReload("site/{layouts,snippets,templates}/**/*")],
-
-  server: {
-    cors: true,
-    port: 3000,
-    strictPort: true,
-  },
 }));
