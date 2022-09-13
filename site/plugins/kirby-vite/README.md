@@ -4,4 +4,4 @@ For an example use-case, take a look at [kirby-vite-unocss-kit](https://github.c
 
 ## License
 
-[MIT](https://opensource.org/licenses/MIT)
+[MIT](./LICENSE) License © 2021-2022 [Johann Schopplich](https://github.com/johannschopplich)

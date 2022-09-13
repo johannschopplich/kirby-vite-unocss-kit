@@ -9,24 +9,21 @@
     "format": "prettier \"src/**/*.{css,scss,ts}\" --write --ignore-path .gitignore"
   },
   "dependencies": {
-    "@unocss/reset": "^0.41.1"
+    "@unocss/reset": "^0.45.21"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.6",
-    "@types/node": "^18.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.30.0",
-    "@typescript-eslint/parser": "^5.30.0",
-    "@unocss/preset-icons": "^0.41.1",
-    "@unocss/preset-typography": "^0.41.1",
-    "@unocss/preset-wind": "^0.41.1",
-    "concurrently": "^7.2.2",
-    "eslint": "^8.18.0",
+    "@iconify-json/carbon": "^1.1.7",
+    "@types/node": "^18.7.17",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "concurrently": "^7.4.0",
+    "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.7.1",
-    "sass": "^1.53.0",
+    "sass": "^1.54.9",
     "shx": "^0.3.4",
-    "unocss": "^0.41.1",
-    "vite": "^3.0.0-beta.5",
-    "vite-plugin-full-reload": "^1.0.0"
+    "unocss": "^0.45.21",
+    "vite": "^3.1.0",
+    "vite-plugin-full-reload": "^1.0.4"
   }
 }
