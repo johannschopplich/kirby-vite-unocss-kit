@@ -8,16 +8,25 @@ if (import.meta.env.DEV) {
 }
 
 // Auto-load modules
-for (const m of Object.values(import.meta.globEager("./modules/*.ts"))) {
+for (const m of Object.values(
+  import.meta.glob<true, string, { install?: () => void | Promise<void> }>(
+    "./modules/*.ts",
+    { eager: true }
+  )
+)) {
   m.install?.();
 }
 
 // Auto-load templates
 const templates = Object.fromEntries(
-  Object.entries(import.meta.glob("./templates/*.ts")).map(([key, value]) => [
-    key.slice(12, -3),
-    value,
-  ])
+  Object.entries(
+    import.meta.glob<
+      true,
+      string,
+      () => Promise<{ default?: () => void | Promise<void> }>
+    >("./templates/*.ts")
+  ).map(([key, value]) => [key.slice(12, -3), value])
 );
 
-templates[document.body.dataset.template ?? ""]?.().then((m) => m.default?.());
+const { template = "" } = document.body.dataset;
+templates[template]?.().then((m) => m.default?.());

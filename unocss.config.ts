@@ -1,7 +1,9 @@
-import { defineConfig } from "unocss";
-import { preset as presetIcons } from "@unocss/preset-icons";
-import { presetWind } from "@unocss/preset-wind";
-import { presetTypography } from "@unocss/preset-typography";
+import {
+  defineConfig,
+  presetTypography,
+  presetIcons,
+  presetWind,
+} from "unocss";
 
 export default defineConfig({
   shortcuts: [
