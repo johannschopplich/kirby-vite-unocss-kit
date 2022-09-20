@@ -10,7 +10,7 @@ A powerful and performant integration of [Vite](https://vitejs.dev), [UnoCSS](ht
 - 🪄 Page reload on PHP snippet/template changes
 - 🎨 [UnoCSS](https://github.com/antfu/unocss) – on-demand atomic CSS engine similar to Tailwind CSS
 - 🤹‍♀️ [Pure CSS icons](https://github.com/antfu/unocss/tree/main/packages/preset-icons/) – use any icon as a single class
-- 🔍 [SEO-friendly](https://github.com/johannschopplich/kirby-extended/blob/main/docs/meta.md) defaults
+- 🔍 [SEO-friendly](https://github.com/johannschopplich/kirby-helpers/blob/main/docs/meta.md) defaults
 - 🦾 TypeScript, of course
 
 ## Why UnoCSS
@@ -121,4 +121,4 @@ rm -rf storage/cache/<your-website>
 
 ## License
 
-[MIT](./LICENSE) License © 2021 [Johann Schopplich](https://github.com/johannschopplich)
+[MIT](./LICENSE) License © 2021-2022 [Johann Schopplich](https://github.com/johannschopplich)

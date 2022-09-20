@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df1547c3decf7c4367d257d66a445da2",
+    "content-hash": "f8514348aa9b467d470f82183c3884c1",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -372,129 +372,16 @@
         },
         {
             "name": "johannschopplich/kirby-blurry-placeholder",
-            "version": "1.5.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-blurry-placeholder.git",
-                "reference": "33d1f792bdf8818008e09ce87e85dd63ca7e88fd"
+                "reference": "3197e221c3845ecf9b023e07a732754307f963e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-blurry-placeholder/zipball/33d1f792bdf8818008e09ce87e85dd63ca7e88fd",
-                "reference": "33d1f792bdf8818008e09ce87e85dd63ca7e88fd",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/composer-installer": "^1.2",
-                "php": ">=7.4.0"
-            },
-            "require-dev": {
-                "getkirby/cms": "^3.6"
-            },
-            "type": "kirby-plugin",
-            "extra": {
-                "kirby-cms-path": false
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Johann Schopplich",
-                    "email": "pkg@johannschopplich.com",
-                    "homepage": "https://johannschopplich.com"
-                }
-            ],
-            "description": "Blurry image placeholders and lazy loading for better UX",
-            "homepage": "https://github.com/johannschopplich/kirby-blurry-placeholder#readme",
-            "keywords": [
-                "image",
-                "kirby",
-                "lazyload",
-                "placeholder",
-                "seo"
-            ],
-            "support": {
-                "issues": "https://github.com/johannschopplich/kirby-blurry-placeholder/issues",
-                "source": "https://github.com/johannschopplich/kirby-blurry-placeholder/tree/v1.5.0"
-            },
-            "time": "2022-03-17T12:30:45+00:00"
-        },
-        {
-            "name": "johannschopplich/kirby-extended",
-            "version": "2.11.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/johannschopplich/kirby-extended.git",
-                "reference": "2983531a80f95e5ae18e2f9a0674ca29e49acad1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-extended/zipball/2983531a80f95e5ae18e2f9a0674ca29e49acad1",
-                "reference": "2983531a80f95e5ae18e2f9a0674ca29e49acad1",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/composer-installer": "^1.2",
-                "php": ">=8.0.0",
-                "symfony/polyfill-php80": "^1.23",
-                "vlucas/phpdotenv": "^5.0"
-            },
-            "require-dev": {
-                "getkirby/cms": "^3.7"
-            },
-            "type": "kirby-plugin",
-            "extra": {
-                "kirby-cms-path": false
-            },
-            "autoload": {
-                "files": [
-                    "helpers.php"
-                ],
-                "psr-4": {
-                    "KirbyExtended\\": "classes/KirbyExtended/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Johann Schopplich",
-                    "email": "pkg@johannschopplich.com",
-                    "homepage": "https://johannschopplich.com"
-                }
-            ],
-            "description": "Dotenv support, meta tags generation and more for the Kirby CMS",
-            "homepage": "https://github.com/johannschopplich/kirby-extended#readme",
-            "keywords": [
-                "dotenv",
-                "env",
-                "kirby",
-                "meta",
-                "meta-tags",
-                "seo"
-            ],
-            "support": {
-                "issues": "https://github.com/johannschopplich/kirby-extended/issues",
-                "source": "https://github.com/johannschopplich/kirby-extended/tree/v2.11.3"
-            },
-            "time": "2022-09-02T16:46:11+00:00"
-        },
-        {
-            "name": "johannschopplich/kirby-vite",
-            "version": "1.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/johannschopplich/kirby-vite.git",
-                "reference": "85c098b6f53c19e0ee91e1669942ae1f28c2b9f5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-vite/zipball/85c098b6f53c19e0ee91e1669942ae1f28c2b9f5",
-                "reference": "85c098b6f53c19e0ee91e1669942ae1f28c2b9f5",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-blurry-placeholder/zipball/3197e221c3845ecf9b023e07a732754307f963e8",
+                "reference": "3197e221c3845ecf9b023e07a732754307f963e8",
                 "shasum": ""
             },
             "require": {
@@ -519,17 +406,85 @@
                     "homepage": "https://johannschopplich.com"
                 }
             ],
-            "description": "Vite integration for the Kirby CMS",
-            "homepage": "https://github.com/johannschopplich/kirby-vite#readme",
+            "description": "Blurry image placeholders for better UX",
+            "homepage": "https://github.com/johannschopplich/kirby-blurry-placeholder#readme",
             "keywords": [
+                "image",
                 "kirby",
+                "lazyload",
+                "placeholder",
+                "seo"
+            ],
+            "support": {
+                "issues": "https://github.com/johannschopplich/kirby-blurry-placeholder/issues",
+                "source": "https://github.com/johannschopplich/kirby-blurry-placeholder/tree/v2.0.1"
+            },
+            "time": "2022-09-20T19:24:10+00:00"
+        },
+        {
+            "name": "johannschopplich/kirby-helpers",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johannschopplich/kirby-helpers.git",
+                "reference": "2ad1bce31097ef93cb28ce767db5c96470e821ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-helpers/zipball/2ad1bce31097ef93cb28ce767db5c96470e821ed",
+                "reference": "2ad1bce31097ef93cb28ce767db5c96470e821ed",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2",
+                "php": ">=8.0.0",
+                "symfony/polyfill-php80": "^1.26",
+                "vlucas/phpdotenv": "^5.0"
+            },
+            "require-dev": {
+                "getkirby/cms": "^3.7"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": false
+            },
+            "autoload": {
+                "files": [
+                    "helpers.php"
+                ],
+                "psr-4": {
+                    "KirbyHelpers\\": "classes/KirbyHelpers/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Johann Schopplich",
+                    "email": "pkg@johannschopplich.com",
+                    "homepage": "https://johannschopplich.com"
+                }
+            ],
+            "description": "Dotenv support, meta tags generation and more for the Kirby CMS",
+            "homepage": "https://github.com/johannschopplich/kirby-helpers#readme",
+            "keywords": [
+                "dotenv",
+                "env",
+                "getkirby",
+                "kirby",
+                "kirby-cms",
+                "meta",
+                "meta-tags",
+                "seo",
                 "vite"
             ],
             "support": {
-                "issues": "https://github.com/johannschopplich/kirby-vite/issues",
-                "source": "https://github.com/johannschopplich/kirby-vite/tree/v1.0.6"
+                "issues": "https://github.com/johannschopplich/kirby-helpers/issues",
+                "source": "https://github.com/johannschopplich/kirby-helpers/tree/v3.0.2"
             },
-            "time": "2022-09-13T13:14:13+00:00"
+            "time": "2022-09-20T19:25:56+00:00"
         },
         {
             "name": "laminas/laminas-escaper",

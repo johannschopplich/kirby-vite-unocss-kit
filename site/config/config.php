@@ -25,12 +25,14 @@ return [
         ]
     ],
 
-    'kirby-extended' => [
+    'kirby-helpers' => [
         'meta' => [
             'defaults' => require __DIR__ . '/meta.php'
         ],
         'vite' => [
-            'entry' => 'main.ts'
+            'server' => [
+                'host' => 'localhost'
+            ]
         ]
     ]
 

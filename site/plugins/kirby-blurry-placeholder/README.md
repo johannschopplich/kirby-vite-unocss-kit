@@ -12,7 +12,7 @@ How it works:
 ## Key Features
 
 - ✨ Avoids content jumping (keeping aspect ratio)
-- 🥨 Respects [custom image formats](https://getkirby.com/docs/guide/templates/resize-images-on-the-fly#image-formats) set globally
+- 🥨 Respects [custom image formats](https://getkirby.com/docs/guide/templates/resize-images-on-the-fly#image-formats), like WebP and AVIF
 - 🏗 Use as:
   - [Image block](#as-kirby-image-block)
   - [Kirbytag](#as-kirbytag)
@@ -23,7 +23,7 @@ How it works:
 ## Requirements
 
 - Kirby 3.6+
-- PHP 7.4+
+- PHP 8.0+
 
 ## Installation
 
@@ -180,13 +180,13 @@ So should you implement a "blur down" transition? **Probably not.** If you do, s
 
 ## Options
 
-> All options listed have to be prefixed with `kirby-extended.blurry-placeholder.` in your `config.php`.
+> ℹ️ The plugin's options namespace was changed to `johannschopplich.blurry-placeholder` in v2.0.1. All options from the former `kirby-extended.blurry-placeholder` are deprecated, but still supported as a fallback.
 
-| Option                   | Default | Description                                                                                                                                                                                                                    |
-| ------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `pixel-target`           | `60`    | Aim for a placeholder image of ~P pixels (`w \* h = ~P`).                                                                                                                                                                      |
-| `kirbytag.srcset-preset` | `null`  | A preset passed to [Kirby's `srcset` method](https://getkirby.com/docs/reference/objects/cms/file/srcset#define-presets) when using the Kirbytag. If `null` (default), a `src` attribute will be rendered instead of `srcset`. |
-| `kirbytag.sizes`         | `auto`  | String for the `data-sizes` attribute if the Kirbytag works with `srcset`'s.                                                                                                                                                   |
+| Option (`johannschopplich.blurry-placeholder.<option>`) | Default | Description                                                                                                                                                                                                                    |
+| ------------------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `pixel-target`                                          | `60`    | Aim for a placeholder image of ~P pixels (`w \* h = ~P`).                                                                                                                                                                      |
+| `kirbytag.srcset-preset`                                | `null`  | A preset passed to [Kirby's `srcset` method](https://getkirby.com/docs/reference/objects/cms/file/srcset#define-presets) when using the Kirbytag. If `null` (default), a `src` attribute will be rendered instead of `srcset`. |
+| `kirbytag.sizes`                                        | `auto`  | String for the `data-sizes` attribute if the Kirbytag works with `srcset`'s.                                                                                                                                                   |
 
 > All of the `srcset` options have to be wrapped in an array.
 
@@ -194,7 +194,7 @@ To give an example for your `config.php`:
 
 ```php
 return [
-    'kirby-extended.blurry-placeholder' => [
+    'johannschopplich.blurry-placeholder' => [
         'pixel-target' => 60,
         'kirbytag' => [
             'srcset-preset' => 'article'
