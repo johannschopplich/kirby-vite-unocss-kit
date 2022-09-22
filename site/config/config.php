@@ -28,11 +28,6 @@ return [
     'kirby-helpers' => [
         'meta' => [
             'defaults' => require __DIR__ . '/meta.php'
-        ],
-        'vite' => [
-            'server' => [
-                'host' => 'localhost'
-            ]
         ]
     ]
 

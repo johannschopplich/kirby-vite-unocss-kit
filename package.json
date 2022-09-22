@@ -20,7 +20,7 @@
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.7.1",
-    "sass": "^1.54.9",
+    "sass": "^1.55.0",
     "shx": "^0.3.4",
     "unocss": "^0.45.22",
     "vite": "^3.1.3",
