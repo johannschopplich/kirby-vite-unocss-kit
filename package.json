@@ -1,5 +1,5 @@
 {
-  "prrivate": true,
+  "private": true,
   "scripts": {
     "uno": "unocss \"site/{layouts,snippets,templates}/**/*\" --out-file src/styles/uno.css",
     "dev": "rm -rf public/dist && concurrently \"npm run uno -- --watch\" \"vite\"",
