@@ -9,21 +9,21 @@
     "format": "prettier \"src/**/*.{css,scss,ts}\" --write --ignore-path .gitignore"
   },
   "dependencies": {
-    "@unocss/reset": "^0.45.22"
+    "@unocss/reset": "^0.46.5"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.8",
-    "@types/node": "^18.7.18",
-    "@typescript-eslint/eslint-plugin": "^5.38.0",
-    "@typescript-eslint/parser": "^5.38.0",
-    "concurrently": "^7.4.0",
-    "eslint": "^8.23.1",
+    "@iconify-json/carbon": "^1.1.10",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "concurrently": "^7.5.0",
+    "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.7.1",
-    "sass": "^1.55.0",
+    "sass": "^1.56.1",
     "shx": "^0.3.4",
-    "unocss": "^0.45.22",
-    "vite": "^3.1.3",
+    "unocss": "^0.46.5",
+    "vite": "^3.2.4",
     "vite-plugin-full-reload": "^1.0.4"
   }
 }
