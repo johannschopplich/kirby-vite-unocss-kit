@@ -6,12 +6,16 @@ Text: [{"content":{"level":"h1","text":"Kirby Vite UnoCSS Kit"},"id":"12a02ece-0
 
 ----
 
-Customtitle:
+Customtitle: 
 
 ----
 
-Description:
+Description: 
 
 ----
 
-Thumbnail:
+Thumbnail: 
+
+----
+
+Uuid: WHChjLFsJAHjbtkT
