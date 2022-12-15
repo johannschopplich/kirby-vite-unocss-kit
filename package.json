@@ -4,26 +4,25 @@
     "uno": "unocss \"site/{layouts,snippets,templates}/**/*\" --out-file src/styles/uno.css",
     "dev": "rm -rf public/dist && concurrently \"npm run uno -- --watch\" \"vite\"",
     "build": "npm run uno && vite build",
-    "lint": "eslint \"src/**/*.ts\" --ignore-path .gitignore",
-    "lint:fix": "npm run lint -- --fix",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
     "format": "prettier \"src/**/*.{css,scss,ts}\" --write --ignore-path .gitignore"
   },
   "dependencies": {
-    "@unocss/reset": "^0.46.5"
+    "@unocss/reset": "^0.47.6"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.10",
-    "@types/node": "^18.11.9",
-    "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "@typescript-eslint/parser": "^5.43.0",
-    "concurrently": "^7.5.0",
-    "eslint": "^8.27.0",
+    "@iconify-json/carbon": "^1.1.11",
+    "@nuxt/eslint-config": "^0.1.1",
+    "@types/node": "^18.11.15",
+    "concurrently": "^7.6.0",
+    "eslint": "^8.29.0",
     "eslint-config-prettier": "^8.5.0",
-    "prettier": "^2.7.1",
-    "sass": "^1.56.1",
+    "prettier": "^2.8.1",
+    "sass": "^1.56.2",
     "shx": "^0.3.4",
-    "unocss": "^0.46.5",
-    "vite": "^3.2.4",
-    "vite-plugin-full-reload": "^1.0.4"
+    "unocss": "^0.47.6",
+    "vite": "^4.0.1",
+    "vite-plugin-full-reload": "^1.0.5"
   }
 }
