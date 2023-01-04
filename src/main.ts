@@ -25,5 +25,5 @@ const templates = Object.fromEntries(
   ).map(([key, value]) => [key.slice(12, -3), value])
 );
 
-const { template = "" } = document.body.dataset;
+const { template = "default" } = document.body.dataset;
 templates[template]?.().then((m) => m.default?.());
