@@ -2,4 +2,20 @@ Title: Error
 
 ----
 
+Text: 
+
+----
+
+Customtitle: 
+
+----
+
+Description: 
+
+----
+
+Thumbnail: 
+
+----
+
 Uuid: e3cNttCmieqcniPR

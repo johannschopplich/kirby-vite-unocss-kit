@@ -2,18 +2,23 @@ type: fields
 fields:
   customTitle:
     label:
-      de: Eigener Titel
-      en: Custom Title
+      de: Titel (Überschreiben)
+      en: Title (Override)
     type: text
     icon: title
+    placeholder: "{{ page.title }} – {{ site.title }}"
+    help:
+      de: Der Seitentitel, so wie er in Suchmaschinen erscheinen soll. Bleibt das Feld leer, wird stattdessen der Seitentitel ausgegeben.
+      en: The page title as it should appear in search engines. If left blank, the page title will be used.
   description:
     label:
-      de: Beschreibung
-      en: Description
+      de: Beschreibung (Überschreiben)
+      en: Description (Override)
     type: textarea
-    font: monospace
     buttons: false
-    icon: text
+    help:
+      de: Eine kurze Beschreibung der Seite, die von Suchmaschinen unter dem Titel angezeigt wird.
+      en: A short description of the page that will be displayed underneath the title by search engines.
   thumbnail:
     label:
       de: Vorschaubild

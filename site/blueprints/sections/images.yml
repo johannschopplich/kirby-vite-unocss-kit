@@ -1,9 +1,9 @@
 type: files
-headline:
+label:
   de: Bilder
   en: Images
 template: image
+sortBy: filename desc
 empty:
   de: Noch keine Bilder
   en: No images yet
-sortBy: filename desc
