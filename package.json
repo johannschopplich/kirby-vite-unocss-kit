@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "uno": "unocss \"site/{layouts,snippets,templates}/**/*\" --out-file src/styles/uno.css",
+    "uno": "unocss \"site/{snippets,templates}/**/*\" --out-file src/styles/uno.css",
     "dev": "rm -rf public/dist && concurrently \"npm run uno -- --watch\" \"vite\"",
     "build": "npm run uno && vite build",
     "lint": "eslint src",
@@ -9,19 +9,19 @@
     "format": "prettier \"src/**/*.{css,scss,ts}\" --write --ignore-path .gitignore"
   },
   "dependencies": {
-    "@unocss/reset": "^0.48.0"
+    "@unocss/reset": "^0.48.4"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.13",
     "@nuxt/eslint-config": "^0.1.1",
     "@types/node": "^18.11.18",
     "concurrently": "^7.6.0",
-    "eslint": "^8.31.0",
+    "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.6.0",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.3",
     "sass": "^1.57.1",
     "shx": "^0.3.4",
-    "unocss": "^0.48.0",
+    "unocss": "^0.48.4",
     "vite": "^4.0.4",
     "vite-plugin-full-reload": "^1.0.5"
   }
