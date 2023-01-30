@@ -19,6 +19,10 @@ storage/sessions/*
 !storage/sessions/.gitkeep
 site/config/.license
 
+# Plugins
+site/plugins/*
+!site/plugins/.gitkeep
+
 # Build assets
 public/assets/dev
 public/dist
