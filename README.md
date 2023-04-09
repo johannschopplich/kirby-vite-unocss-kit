@@ -50,7 +50,7 @@ For example, for this demo website the following CSS is generated:
 .text-base{font-size:1rem;line-height:1.5rem;}
 ```
 
-You may also want to give this blog post a read [Reimagine Atomic CSS](https://antfu.me/posts/reimagine-atomic-css) for the story behind.
+For the story behind this project, see the blog post [Reimagine Atomic CSS](https://antfu.me/posts/reimagine-atomic-css).
 
 ## How It Works
 
