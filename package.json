@@ -9,20 +9,20 @@
     "format": "prettier \"src/**/*.{css,scss,ts}\" --write --ignore-path .gitignore"
   },
   "dependencies": {
-    "@unocss/reset": "^0.50.6"
+    "@unocss/reset": "^0.53.3"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.16",
+    "@iconify-json/carbon": "^1.1.18",
     "@nuxt/eslint-config": "^0.1.1",
-    "@types/node": "^18.15.5",
-    "concurrently": "^7.6.0",
-    "eslint": "^8.36.0",
+    "@types/node": "^18.16.18",
+    "concurrently": "^8.2.0",
+    "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
-    "prettier": "^2.8.6",
-    "sass": "^1.59.3",
+    "prettier": "^2.8.8",
+    "sass": "^1.63.6",
     "shx": "^0.3.4",
-    "unocss": "^0.50.6",
-    "vite": "^4.2.1",
+    "unocss": "^0.53.3",
+    "vite": "^4.3.9",
     "vite-plugin-full-reload": "^1.0.5"
   }
 }
