@@ -4,27 +4,33 @@ import { defineConfig } from "vite";
 import FullReload from "vite-plugin-full-reload";
 import type { Plugin as PostCssPlugin } from "postcss";
 
-export default defineConfig(({ mode }) => ({
-  root: "src",
-  base: mode === "development" ? "/" : "/dist/",
+const currentDir = new URL(".", import.meta.url).pathname;
 
-  build: {
-    outDir: resolve(__dirname, "public/dist"),
-    emptyOutDir: true,
-    manifest: true,
-    rollupOptions: {
-      input: resolve(__dirname, "src/main.ts"),
+export default defineConfig(({ mode }) => {
+  const isDev = mode === "development";
+
+  return {
+    root: "src",
+    base: isDev ? "/" : "/dist/",
+
+    build: {
+      outDir: resolve(currentDir, "public/dist"),
+      emptyOutDir: true,
+      manifest: true,
+      rollupOptions: {
+        input: resolve(currentDir, "src/main.ts"),
+      },
     },
-  },
 
-  css: {
-    postcss: {
-      plugins: [postCssDevStyles()],
+    css: {
+      postcss: {
+        ...(isDev && { plugins: [postCssDevStyles()] }),
+      },
     },
-  },
 
-  plugins: [FullReload("site/{snippets,templates}/**/*")],
-}));
+    plugins: [FullReload("site/{snippets,templates}/**/*")],
+  };
+});
 
 /**
  * Prevent FOUC in development mode before Vite
@@ -33,14 +39,10 @@ export default defineConfig(({ mode }) => ({
 function postCssDevStyles(): PostCssPlugin {
   return {
     postcssPlugin: "postcss-vite-dev-css",
-
-    OnceExit(root, { result }) {
-      // @ts-expect-error: property unknown
-      if (result.opts.env !== "production") {
-        const outDir = resolve(__dirname, "public/assets/dev");
-        mkdirSync(outDir, { recursive: true });
-        writeFileSync(resolve(outDir, "index.css"), root.toResult().css);
-      }
+    OnceExit(root) {
+      const outDir = resolve(currentDir, "public/assets/dev");
+      mkdirSync(outDir, { recursive: true });
+      writeFileSync(resolve(outDir, "index.css"), root.toResult().css);
     },
   };
 }
