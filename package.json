@@ -1,28 +1,32 @@
 {
+  "type": "module",
   "private": true,
   "scripts": {
-    "uno": "unocss \"site/{snippets,templates}/**/*\" --out-file src/styles/uno.css",
-    "dev": "rm -rf public/dist && concurrently \"npm run uno -- --watch\" \"vite\"",
-    "build": "npm run uno && vite build",
-    "lint": "eslint src",
-    "lint:fix": "eslint src --fix",
-    "format": "prettier \"src/**/*.{css,scss,ts}\" --write --ignore-path .gitignore"
+    "dev": "rm -rf public/dist && concurrently \"npm run assets:unocss -- --watch\" \"vite\"",
+    "build": "npm run assets:unocss && vite build",
+    "assets:unocss": "unocss \"site/{snippets,templates}/**/*\" --out-file src/styles/uno.css",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier \"src/**/*\" --write"
   },
   "dependencies": {
-    "@unocss/reset": "^0.53.3"
+    "@unocss/reset": "^0.58.5"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.18",
-    "@nuxt/eslint-config": "^0.1.1",
-    "@types/node": "^18.16.18",
-    "concurrently": "^8.2.0",
-    "eslint": "^8.43.0",
-    "eslint-config-prettier": "^8.8.0",
-    "prettier": "^2.8.8",
-    "sass": "^1.63.6",
-    "shx": "^0.3.4",
-    "unocss": "^0.53.3",
-    "vite": "^4.3.9",
-    "vite-plugin-full-reload": "^1.0.5"
+    "@antfu/eslint-config": "^2.6.4",
+    "@iconify-json/carbon": "^1.1.30",
+    "@types/node": "^20.11.20",
+    "@unocss/cli": "^0.58.5",
+    "@unocss/eslint-plugin": "^0.58.5",
+    "@unocss/preset-mini": "^0.58.5",
+    "@unocss/preset-wind": "^0.58.5",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
+    "sass": "^1.71.1",
+    "unocss": "^0.58.5",
+    "vite": "^5.1.4",
+    "vite-plugin-full-reload": "^1.1.0"
   }
 }

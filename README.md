@@ -87,11 +87,11 @@ composer install
 
 ## Configuration
 
-To add custom rules or shortcuts, edit the [`unocss.config.ts`](./unocss.config.ts).
+To add custom rules or shortcuts, edit the [`uno.config.ts`](./uno.config.ts).
 
 For example, this project already defines a `box` class via a shortcut:
 
-```js
+```
 shortcuts: {
   'box': 'max-w-7xl mx-auto bg-gray-100 rounded-md shadow-sm p-4'
 }
@@ -129,10 +129,12 @@ rm -rf storage/cache/<your-website>
 
 ### Deployment
 
-> ℹ️ See [ploi-deploy.sh](./scripts/ploi-deploy.sh) for deployment instructions.
+> [!NOTE]
+> See [ploi-deploy.sh](./scripts/ploi-deploy.sh) for deployment instructions.
 
-> ℹ️ For Apache web servers: Some hosting environments require uncommenting `RewriteBase /` in [`.htaccess`](./public/.htaccess) to make site links work.
+> [!TIP]
+> For Apache web servers: Some hosting environments require uncommenting `RewriteBase /` in [`.htaccess`](./public/.htaccess) to make site links work.
 
 ## License
 
-[MIT](./LICENSE) License © 2021-2023 [Johann Schopplich](https://github.com/johannschopplich)
+[MIT](./LICENSE) License © 2021-PRESENT [Johann Schopplich](https://github.com/johannschopplich)

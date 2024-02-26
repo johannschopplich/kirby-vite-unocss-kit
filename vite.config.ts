@@ -2,16 +2,16 @@ import { resolve } from "node:path";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { defineConfig } from "vite";
 import FullReload from "vite-plugin-full-reload";
-import type { Plugin as PostCssPlugin } from "postcss";
+import type { Plugin as PostCSSPlugin } from "postcss";
 
 const currentDir = new URL(".", import.meta.url).pathname;
 
 export default defineConfig(({ mode }) => {
-  const isDev = mode === "development";
+  const isProd = mode === "production";
 
   return {
     root: "src",
-    base: isDev ? "/" : "/dist/",
+    base: isProd ? "/dist/" : "/",
 
     build: {
       outDir: resolve(currentDir, "public/dist"),
@@ -24,7 +24,7 @@ export default defineConfig(({ mode }) => {
 
     css: {
       postcss: {
-        ...(isDev && { plugins: [postCssDevStyles()] }),
+        ...(!isProd && { plugins: [exportDevStyles()] }),
       },
     },
 
@@ -36,7 +36,7 @@ export default defineConfig(({ mode }) => {
  * Prevent FOUC in development mode before Vite
  * injects the CSS into the page
  */
-function postCssDevStyles(): PostCssPlugin {
+function exportDevStyles(): PostCSSPlugin {
   return {
     postcssPlugin: "postcss-vite-dev-css",
     OnceExit(root) {
