@@ -1,10 +1,11 @@
-import { resolve } from "node:path";
-import { mkdirSync, writeFileSync } from "node:fs";
+import type { Plugin as PostCSSPlugin } from "postcss";
+import * as fs from "node:fs";
+import * as path from "node:path";
+import * as url from "node:url";
 import { defineConfig } from "vite";
 import FullReload from "vite-plugin-full-reload";
-import type { Plugin as PostCSSPlugin } from "postcss";
 
-const currentDir = new URL(".", import.meta.url).pathname;
+const currentDir = url.fileURLToPath(new URL(".", import.meta.url));
 
 export default defineConfig(({ mode }) => {
   const isProd = mode === "production";
@@ -14,11 +15,11 @@ export default defineConfig(({ mode }) => {
     base: isProd ? "/dist/" : "/",
 
     build: {
-      outDir: resolve(currentDir, "public/dist"),
+      outDir: path.resolve(currentDir, "public/dist"),
       emptyOutDir: true,
       manifest: true,
       rollupOptions: {
-        input: resolve(currentDir, "src/main.ts"),
+        input: path.resolve(currentDir, "src/main.ts"),
       },
     },
 
@@ -29,6 +30,10 @@ export default defineConfig(({ mode }) => {
     },
 
     plugins: [FullReload("site/{snippets,templates}/**/*")],
+
+    server: {
+      cors: true,
+    },
   };
 });
 
@@ -40,9 +45,9 @@ function exportDevStyles(): PostCSSPlugin {
   return {
     postcssPlugin: "postcss-vite-dev-css",
     OnceExit(root) {
-      const outDir = resolve(currentDir, "public/assets/dev");
-      mkdirSync(outDir, { recursive: true });
-      writeFileSync(resolve(outDir, "index.css"), root.toResult().css);
+      const outDir = path.resolve(currentDir, "public/assets/dev");
+      fs.mkdirSync(outDir, { recursive: true });
+      fs.writeFileSync(path.resolve(outDir, "index.css"), root.toResult().css);
     },
   };
 }

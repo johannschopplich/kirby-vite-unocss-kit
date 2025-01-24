@@ -10,4 +10,4 @@ Description:
 
 ----
 
-Thumbnail: 
+Thumbnail: []

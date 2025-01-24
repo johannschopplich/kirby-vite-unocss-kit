@@ -14,7 +14,7 @@ Description:
 
 ----
 
-Thumbnail: 
+Thumbnail: []
 
 ----
 

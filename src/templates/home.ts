@@ -1,3 +1,4 @@
 export default async () => {
-  console.log("Hello from the homepage")
+  // eslint-disable-next-line no-console
+  console.log("Hello from the homepage");
 };
