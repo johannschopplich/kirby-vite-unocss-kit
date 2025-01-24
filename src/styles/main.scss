@@ -1,4 +1,4 @@
-// https://github.com/antfu/unocss/tree/main/packages/reset
-@use "@unocss/reset/tailwind";
+// https://unocss.dev/guide/style-reset#tailwind-compat
+@use "@unocss/reset/tailwind-compat";
 
 @use "uno";
