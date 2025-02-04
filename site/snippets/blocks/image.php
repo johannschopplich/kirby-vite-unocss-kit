@@ -16,7 +16,7 @@ if ($block->location() === 'web') {
   if ($caption->isEmpty()) $caption = $image->caption();
 
   $img = Html::img(
-    $image->src(),
+    $image->url(),
     [
       'loading' => 'lazy',
       'data-srcset' => $image->srcset(),
