@@ -1,6 +1,6 @@
 {
   "require": {
-    "getkirby/cms": "^4",
+    "getkirby/cms": "^5",
     "johannschopplich/kirby-helpers": "^6"
   },
   "scripts": {

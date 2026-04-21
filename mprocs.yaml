@@ -1,0 +1,7 @@
+procs:
+  unocss:
+    cmd: [npm, run, dev:unocss]
+    autostart: true
+  vite:
+    cmd: [npm, run, dev:vite]
+    autostart: true

@@ -1,4 +1,4 @@
-import "./styles/main.scss";
+import "./styles/main.css";
 
 // Remove temporary stylesheet (to prevent FOUC) in development mode
 if (import.meta.env.DEV) {

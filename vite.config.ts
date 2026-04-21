@@ -2,6 +2,7 @@ import type { Plugin as PostCSSPlugin } from "postcss";
 import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
+import postcssNesting from "postcss-nesting";
 import { defineConfig } from "vite";
 import FullReload from "vite-plugin-full-reload";
 
@@ -25,7 +26,10 @@ export default defineConfig(({ mode }) => {
 
     css: {
       postcss: {
-        ...(!isProd && { plugins: [exportDevStyles()] }),
+        plugins: [
+          postcssNesting(),
+          ...(!isProd ? [exportDevStyles()] : []),
+        ],
       },
     },
 
@@ -38,8 +42,7 @@ export default defineConfig(({ mode }) => {
 });
 
 /**
- * Prevent FOUC in development mode before Vite
- * injects the CSS into the page
+ * Prevent FOUC in development mode before Vite injects the CSS into the page
  */
 function exportDevStyles(): PostCSSPlugin {
   return {

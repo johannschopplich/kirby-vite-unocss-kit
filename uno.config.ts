@@ -1,9 +1,9 @@
-import type { Theme } from "@unocss/preset-wind";
+import type { Theme } from "@unocss/preset-wind4";
 import {
   defineConfig,
   presetIcons,
   presetTypography,
-  presetWind,
+  presetWind4,
 } from "unocss";
 
 export default defineConfig<Theme>({
@@ -16,5 +16,13 @@ export default defineConfig<Theme>({
   shortcuts: [
     { box: "max-w-7xl mx-auto bg-gray-100 rounded-md shadow-sm p-4" },
   ],
-  presets: [presetWind(), presetIcons(), presetTypography()],
+  presets: [
+    presetWind4({
+      preflights: {
+        reset: true,
+      },
+    }),
+    presetIcons(),
+    presetTypography(),
+  ],
 });
