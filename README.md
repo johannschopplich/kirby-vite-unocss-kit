@@ -553,9 +553,6 @@ rm -rf storage/cache/<your-website>
 
 ### Deployment
 
-> [!NOTE]
-> See [ploi-deploy.sh](./scripts/ploi-deploy.sh) for deployment instructions.
-
 > [!TIP]
 > For Apache web servers: Some hosting environments require uncommenting `RewriteBase /` in [`.htaccess`](./public/.htaccess) to make site links work.
 
