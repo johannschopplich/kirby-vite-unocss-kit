@@ -25,9 +25,7 @@ To quote [Anthony Fu](https://antfu.me), the author of UnoCSS:
 
 <details>
 <summary>
-
-#### For this kit's demo, UnoCSS generates the following CSS** (click to expand):
-
+<b>For this kit's demo, UnoCSS generates the following CSS</b> (click to expand):
 </summary>
 
 ```css
