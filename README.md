@@ -24,7 +24,11 @@ To quote [Anthony Fu](https://antfu.me), the author of UnoCSS:
 > By default, UnoCSS applies the default preset. Which provides a common superset of the popular utilities-first framework, including Tailwind CSS, Windi CSS, Bootstrap, Tachyons, etc.
 
 <details>
-<summary>**For this kit's demo, UnoCSS generates the following CSS** (click to expand):</summary>
+<summary>
+
+#### For this kit's demo, UnoCSS generates the following CSS** (click to expand):
+
+</summary>
 
 ```css
 /* layer: properties */
