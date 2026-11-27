@@ -1,12 +1,11 @@
 import type { Plugin as PostCSSPlugin } from "postcss";
 import * as fs from "node:fs";
 import * as path from "node:path";
-import * as url from "node:url";
 import postcssNesting from "postcss-nesting";
 import { defineConfig } from "vite";
 import FullReload from "vite-plugin-full-reload";
 
-const currentDir = url.fileURLToPath(new URL(".", import.meta.url));
+const currentDir = import.meta.dirname;
 
 export default defineConfig(({ mode }) => {
   const isProd = mode === "production";
