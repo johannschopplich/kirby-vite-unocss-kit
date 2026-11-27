@@ -10,9 +10,9 @@ tabs:
     icon: dashboard
     columns:
       - width: 1/1
-        sections:
+        fields:
           pages:
-            type: pages
+            type: pagelist
             headline:
               de: Seiten
               en: Pages
@@ -28,10 +28,9 @@ tabs:
     icon: settings
     columns:
       - width: 1/1
-        sections:
+        fields:
           meta:
-            extends: sections/meta
-            type: fields
+            extends: fields/meta
             fields:
               thumbnail:
                 query: kirby.site.files.template('image')

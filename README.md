@@ -23,7 +23,10 @@ To quote [Anthony Fu](https://antfu.me), the author of UnoCSS:
 >
 > By default, UnoCSS applies the default preset. Which provides a common superset of the popular utilities-first framework, including Tailwind CSS, Windi CSS, Bootstrap, Tachyons, etc.
 
-For this kit's demo, UnoCSS generates the following CSS:
+<details>
+<summary>
+<b>For this kit's demo, UnoCSS generates the following CSS</b> (click to expand):
+</summary>
 
 ```css
 /* layer: properties */
@@ -477,6 +480,8 @@ input:where([type='button'], [type='reset'], [type='submit']),
 }
 ```
 
+</details>
+
 For the story behind this project, see the blog post [Reimagine Atomic CSS](https://antfu.me/posts/reimagine-atomic-css).
 
 ## How It Works
@@ -487,7 +492,7 @@ When running `npm run dev`:
 
 2. In parallel, Vite's dev server builds the JavaScript entry and [`main.css`](./src/styles/main.css), which imports `uno.css`. HMR handles every change to JS, `main.css`, or `uno.css`.
 
-   Both processes run side by side via [mprocs](https://github.com/pvolok/mprocs), configured in [`mprocs.yaml`](./mprocs.yaml).
+   Both processes run side by side via [dekit](https://github.com/pvolok/dekit), configured in [`dekit.yaml`](./dekit.yaml).
 
 3. A full page reload fires whenever a PHP snippet or template changes, so layout edits show up without a manual refresh.
 
