@@ -23,7 +23,12 @@ To quote [Anthony Fu](https://antfu.me), the author of UnoCSS:
 >
 > By default, UnoCSS applies the default preset. Which provides a common superset of the popular utilities-first framework, including Tailwind CSS, Windi CSS, Bootstrap, Tachyons, etc.
 
-For this kit's demo, UnoCSS generates the following CSS:
+<details>
+<summary>
+
+**For this kit's demo, UnoCSS generates the following CSS**
+
+</summary>
 
 ```css
 /* layer: properties */
@@ -476,6 +481,9 @@ input:where([type='button'], [type='reset'], [type='submit']),
 :where(&>:not(:last-child)){--un-space-x-reverse:0;margin-inline-start:calc(calc(var(--spacing) * 3) * var(--un-space-x-reverse));margin-inline-end:calc(calc(var(--spacing) * 3) * calc(1 - var(--un-space-x-reverse)));}
 }
 ```
+
+
+</details>
 
 For the story behind this project, see the blog post [Reimagine Atomic CSS](https://antfu.me/posts/reimagine-atomic-css).
 
