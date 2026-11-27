@@ -1,4 +1,4 @@
-type: fields
+type: group
 fields:
   customTitle:
     label:
@@ -23,7 +23,7 @@ fields:
     label:
       de: Vorschaubild
       en: Thumbnail
-    type: files
+    type: filepicker
     query: page.files.template('image')
     uploads:
       template: image
