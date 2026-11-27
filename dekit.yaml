@@ -1,4 +1,4 @@
-procs:
+tasks:
   unocss:
     cmd: [npm, run, dev:unocss]
     autostart: true
