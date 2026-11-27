@@ -487,7 +487,7 @@ When running `npm run dev`:
 
 2. In parallel, Vite's dev server builds the JavaScript entry and [`main.css`](./src/styles/main.css), which imports `uno.css`. HMR handles every change to JS, `main.css`, or `uno.css`.
 
-   Both processes run side by side via [mprocs](https://github.com/pvolok/mprocs), configured in [`mprocs.yaml`](./mprocs.yaml).
+   Both processes run side by side via [dekit](https://github.com/pvolok/dekit), configured in [`dekit.yaml`](./dekit.yaml).
 
 3. A full page reload fires whenever a PHP snippet or template changes, so layout edits show up without a manual refresh.
 
