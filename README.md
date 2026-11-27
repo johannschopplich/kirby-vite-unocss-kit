@@ -27,7 +27,6 @@ To quote [Anthony Fu](https://antfu.me), the author of UnoCSS:
 <summary>
 
 **For this kit's demo, UnoCSS generates the following CSS**
-
 </summary>
 
 ```css
@@ -481,7 +480,6 @@ input:where([type='button'], [type='reset'], [type='submit']),
 :where(&>:not(:last-child)){--un-space-x-reverse:0;margin-inline-start:calc(calc(var(--spacing) * 3) * var(--un-space-x-reverse));margin-inline-end:calc(calc(var(--spacing) * 3) * calc(1 - var(--un-space-x-reverse)));}
 }
 ```
-
 
 </details>
 
